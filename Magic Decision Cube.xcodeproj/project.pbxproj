@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA16EDE515626F1000995E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA16EDE415626F1000995E00 /* UIKit.framework */; };
+		DA16EDE715626F1000995E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA16EDE615626F1000995E00 /* Foundation.framework */; };
+		DA16EDE915626F1000995E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA16EDE815626F1000995E00 /* CoreGraphics.framework */; };
+		DA16EDEF15626F1000995E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA16EDED15626F1000995E00 /* InfoPlist.strings */; };
+		DA16EDF115626F1000995E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16EDF015626F1000995E00 /* main.m */; };
+		DA16EDF515626F1000995E00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16EDF415626F1000995E00 /* AppDelegate.m */; };
+		DA16EDF815626F1000995E00 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA16EDF615626F1000995E00 /* MainStoryboard.storyboard */; };
+		DA16EDFB15626F1000995E00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16EDFA15626F1000995E00 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA16EDE015626F1000995E00 /* Magic Decision Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Decision Cube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA16EDE415626F1000995E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA16EDE615626F1000995E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA16EDE815626F1000995E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA16EDEC15626F1000995E00 /* Magic Decision Cube-Info.plist */ = {isa = PBXFileReference; path = "Magic Decision Cube-Info.plist"; sourceTree = "<group>"; };
+		DA16EDEE15626F1000995E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA16EDF015626F1000995E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA16EDF215626F1000995E00 /* Magic Decision Cube-Prefix.pch */ = {isa = PBXFileReference; path = "Magic Decision Cube-Prefix.pch"; sourceTree = "<group>"; };
+		DA16EDF315626F1000995E00 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA16EDF415626F1000995E00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA16EDF715626F1000995E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA16EDF915626F1000995E00 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		DA16EDFA15626F1000995E00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA16EDDD15626F1000995E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA16EDE515626F1000995E00 /* UIKit.framework in Frameworks */,
+				DA16EDE715626F1000995E00 /* Foundation.framework in Frameworks */,
+				DA16EDE915626F1000995E00 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA16EDD515626F1000995E00 = {
+			isa = PBXGroup;
+			children = (
+				DA16EDEA15626F1000995E00 /* Magic Decision Cube */,
+				DA16EDE315626F1000995E00 /* Frameworks */,
+				DA16EDE115626F1000995E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA16EDE115626F1000995E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA16EDE015626F1000995E00 /* Magic Decision Cube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA16EDE315626F1000995E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA16EDE415626F1000995E00 /* UIKit.framework */,
+				DA16EDE615626F1000995E00 /* Foundation.framework */,
+				DA16EDE815626F1000995E00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA16EDEA15626F1000995E00 /* Magic Decision Cube */ = {
+			isa = PBXGroup;
+			children = (
+				DA16EDF315626F1000995E00 /* AppDelegate.h */,
+				DA16EDF415626F1000995E00 /* AppDelegate.m */,
+				DA16EDF615626F1000995E00 /* MainStoryboard.storyboard */,
+				DA16EDF915626F1000995E00 /* ViewController.h */,
+				DA16EDFA15626F1000995E00 /* ViewController.m */,
+				DA16EDEB15626F1000995E00 /* Supporting Files */,
+			);
+			path = "Magic Decision Cube";
+			sourceTree = "<group>";
+		};
+		DA16EDEB15626F1000995E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA16EDEC15626F1000995E00 /* Magic Decision Cube-Info.plist */,
+				DA16EDED15626F1000995E00 /* InfoPlist.strings */,
+				DA16EDF015626F1000995E00 /* main.m */,
+				DA16EDF215626F1000995E00 /* Magic Decision Cube-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA16EDDF15626F1000995E00 /* Magic Decision Cube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA16EDFE15626F1000995E00 /* Build configuration list for PBXNativeTarget "Magic Decision Cube" */;
+			buildPhases = (
+				DA16EDDC15626F1000995E00 /* Sources */,
+				DA16EDDD15626F1000995E00 /* Frameworks */,
+				DA16EDDE15626F1000995E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic Decision Cube";
+			productName = "Magic Decision Cube";
+			productReference = DA16EDE015626F1000995E00 /* Magic Decision Cube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA16EDD715626F1000995E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DA16EDDA15626F1000995E00 /* Build configuration list for PBXProject "Magic Decision Cube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA16EDD515626F1000995E00;
+			productRefGroup = DA16EDE115626F1000995E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA16EDDF15626F1000995E00 /* Magic Decision Cube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA16EDDE15626F1000995E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA16EDEF15626F1000995E00 /* InfoPlist.strings in Resources */,
+				DA16EDF815626F1000995E00 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA16EDDC15626F1000995E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA16EDF115626F1000995E00 /* main.m in Sources */,
+				DA16EDF515626F1000995E00 /* AppDelegate.m in Sources */,
+				DA16EDFB15626F1000995E00 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA16EDED15626F1000995E00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA16EDEE15626F1000995E00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA16EDF615626F1000995E00 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA16EDF715626F1000995E00 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA16EDFC15626F1000995E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA16EDFD15626F1000995E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA16EDFF15626F1000995E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Magic Decision Cube/Magic Decision Cube-Prefix.pch";
+				INFOPLIST_FILE = "Magic Decision Cube/Magic Decision Cube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA16EE0015626F1000995E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Magic Decision Cube/Magic Decision Cube-Prefix.pch";
+				INFOPLIST_FILE = "Magic Decision Cube/Magic Decision Cube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA16EDDA15626F1000995E00 /* Build configuration list for PBXProject "Magic Decision Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA16EDFC15626F1000995E00 /* Debug */,
+				DA16EDFD15626F1000995E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA16EDFE15626F1000995E00 /* Build configuration list for PBXNativeTarget "Magic Decision Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA16EDFF15626F1000995E00 /* Debug */,
+				DA16EE0015626F1000995E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA16EDD715626F1000995E00 /* Project object */;
+}
