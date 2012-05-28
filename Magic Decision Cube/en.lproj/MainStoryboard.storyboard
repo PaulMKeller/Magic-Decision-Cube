@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
         <scene sceneID="5">
@@ -12,13 +12,176 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CompleteBackground.png" id="yfb-zP-YzG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ask your question, shake me or tap me, and I'll decide..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" id="IBQ-M4-7m6">
+                                <rect key="frame" x="37" y="10" width="246" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="v4j-nW-GsN">
+                                <rect key="frame" x="0.0" y="410" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <requiredContentSizeIdentifiers>
+                                    <string>ADBannerContentSizeLandscape</string>
+                                    <string>ADBannerContentSizePortrait</string>
+                                </requiredContentSizeIdentifiers>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="EvT-mh-pi8">
+                                <rect key="frame" x="288" y="378" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ieW-2x-a7E" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="76z-2z-Obl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="tqo-XX-mTm" userLabel="ClickDecisionView">
+                                <rect key="frame" x="42" y="207" width="226" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rZf-j7-gz2" appends="YES" id="fdD-wB-hwk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="vTT-CT-uko" userLabel="SpeechBubbleClickView">
+                                <rect key="frame" x="29" y="10" width="265" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xmX-r8-r3y" appends="YES" id="Hg7-SE-e8x"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="banner" destination="v4j-nW-GsN" id="2sR-91-4HY"/>
+                        <outlet property="decisionLabel" destination="IBQ-M4-7m6" id="hPo-Cw-ODV"/>
+                    </connections>
                 </viewController>
+                <tapGestureRecognizer id="rZf-j7-gz2" userLabel="ClickDecisionViewTap">
+                    <connections>
+                        <action selector="foundTap:" destination="2" id="PFr-Mr-LFI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xmX-r8-r3y" userLabel="SpeechBubbleTap">
+                    <connections>
+                        <action selector="foundTap:" destination="2" id="qKZ-P7-JoH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
+        <scene sceneID="tch-Nl-aq0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mi-bN-64l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ieW-2x-a7E" customClass="FlipsideViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwv-cy-azc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Background.png" id="AUI-6a-uir">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" id="JJP-oh-ild">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="f3K-p5-v2C">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="cSw-hf-ihO">
+                                            <connections>
+                                                <action selector="navigateDone:" destination="ieW-2x-a7E" id="twg-fT-vvo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="BCt-jb-zKA">
+                                <rect key="frame" x="202" y="159" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchThrownVibrate:" destination="ieW-2x-a7E" eventType="valueChanged" id="rHM-FS-iug"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="qBs-g8-nYG">
+                                <rect key="frame" x="202" y="220" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchThrownSfx:" destination="ieW-2x-a7E" eventType="valueChanged" id="OCv-vP-hB6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Vibrate:" lineBreakMode="tailTruncation" minimumFontSize="10" id="pjt-tf-f1Z">
+                                <rect key="frame" x="39" y="162" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sound Effects:" lineBreakMode="tailTruncation" minimumFontSize="10" id="qwD-7D-6K2">
+                                <rect key="frame" x="39" y="223" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NB: Sounds will only play if sound is enabled on your device." lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" id="eVp-db-u8q">
+                                <rect key="frame" x="39" y="266" width="242" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="toggleSwitchSfx" destination="qBs-g8-nYG" id="aID-xl-67d"/>
+                        <outlet property="toggleSwitchVibrate" destination="BCt-jb-zKA" id="Hkb-Tz-jli"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="901" y="181"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Background.png" width="320" height="480"/>
+        <image name="CompleteBackground.png" width="320" height="480"/>
+    </resources>
+    <classes>
+        <class className="FlipsideViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipsideViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="navigateDone:"/>
+                <relationship kind="action" name="switchThrownSfx:"/>
+                <relationship kind="action" name="switchThrownVibrate:"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="toggleSwitchSfx" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="toggleSwitchVibrate" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="foundTap:"/>
+                <relationship kind="outlet" name="banner" candidateClass="ADBannerView"/>
+                <relationship kind="outlet" name="decisionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
