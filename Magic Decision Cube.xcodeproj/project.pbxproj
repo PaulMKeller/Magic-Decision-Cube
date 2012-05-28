@@ -15,6 +15,20 @@
 		DA16EDF515626F1000995E00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16EDF415626F1000995E00 /* AppDelegate.m */; };
 		DA16EDF815626F1000995E00 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA16EDF615626F1000995E00 /* MainStoryboard.storyboard */; };
 		DA16EDFB15626F1000995E00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16EDFA15626F1000995E00 /* ViewController.m */; };
+		DA16EE10156273A200995E00 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE02156273A200995E00 /* Background.png */; };
+		DA16EE12156273A200995E00 /* CompleteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE04156273A200995E00 /* CompleteBackground.png */; };
+		DA16EE14156273A200995E00 /* DecisionCube.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE06156273A200995E00 /* DecisionCube.png */; };
+		DA16EE19156273A200995E00 /* MagicDecisionCubeChrome.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE0B156273A200995E00 /* MagicDecisionCubeChrome.png */; };
+		DA16EE1B156273A200995E00 /* SpeechBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE0D156273A200995E00 /* SpeechBubble.png */; };
+		DA16EE241562754600995E00 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE231562754600995E00 /* LaunchImage.png */; };
+		DA16EE261562755000995E00 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE251562755000995E00 /* Default.png */; };
+		DA16EE2A1562756D00995E00 /* Icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DA16EE291562756D00995E00 /* Icon57x57.png */; };
+		DA16EE2C156276AC00995E00 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA16EE2B156276AC00995E00 /* iAd.framework */; };
+		DA7D47AB156A2244008F44A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7D47AA156A2244008F44A8 /* AudioToolbox.framework */; };
+		DA7D47DE156A2638008F44A8 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7D47DD156A2638008F44A8 /* FlipsideViewController.m */; };
+		DAB4B1CA15714AF7008DCCD4 /* Cheer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DAB4B1C915714AF7008DCCD4 /* Cheer.m4a */; };
+		DAB4B1CC15714AFF008DCCD4 /* UhOh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DAB4B1CB15714AFF008DCCD4 /* UhOh.m4a */; };
+		DAB4B1D315714E31008DCCD4 /* DecisionOM.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB4B1D215714E31008DCCD4 /* DecisionOM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +36,32 @@
 		DA16EDE415626F1000995E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA16EDE615626F1000995E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA16EDE815626F1000995E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DA16EDEC15626F1000995E00 /* Magic Decision Cube-Info.plist */ = {isa = PBXFileReference; path = "Magic Decision Cube-Info.plist"; sourceTree = "<group>"; };
+		DA16EDEC15626F1000995E00 /* Magic Decision Cube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Magic Decision Cube-Info.plist"; sourceTree = "<group>"; };
 		DA16EDEE15626F1000995E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA16EDF015626F1000995E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA16EDF215626F1000995E00 /* Magic Decision Cube-Prefix.pch */ = {isa = PBXFileReference; path = "Magic Decision Cube-Prefix.pch"; sourceTree = "<group>"; };
-		DA16EDF315626F1000995E00 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA16EDF215626F1000995E00 /* Magic Decision Cube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magic Decision Cube-Prefix.pch"; sourceTree = "<group>"; };
+		DA16EDF315626F1000995E00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA16EDF415626F1000995E00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DA16EDF715626F1000995E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DA16EDF915626F1000995E00 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		DA16EDF915626F1000995E00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DA16EDFA15626F1000995E00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA16EE02156273A200995E00 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		DA16EE04156273A200995E00 /* CompleteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CompleteBackground.png; sourceTree = "<group>"; };
+		DA16EE06156273A200995E00 /* DecisionCube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DecisionCube.png; sourceTree = "<group>"; };
+		DA16EE0B156273A200995E00 /* MagicDecisionCubeChrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagicDecisionCubeChrome.png; sourceTree = "<group>"; };
+		DA16EE0D156273A200995E00 /* SpeechBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpeechBubble.png; sourceTree = "<group>"; };
+		DA16EE231562754600995E00 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		DA16EE251562755000995E00 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DA16EE291562756D00995E00 /* Icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57x57.png; sourceTree = "<group>"; };
+		DA16EE2B156276AC00995E00 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DA7D47AA156A2244008F44A8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DA7D47DC156A2638008F44A8 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		DA7D47DD156A2638008F44A8 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		DAB4B1C6157143C3008DCCD4 /* MDCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCConfig.h; sourceTree = "<group>"; };
+		DAB4B1C915714AF7008DCCD4 /* Cheer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cheer.m4a; sourceTree = "<group>"; };
+		DAB4B1CB15714AFF008DCCD4 /* UhOh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhOh.m4a; sourceTree = "<group>"; };
+		DAB4B1D115714E31008DCCD4 /* DecisionOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionOM.h; sourceTree = "<group>"; };
+		DAB4B1D215714E31008DCCD4 /* DecisionOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecisionOM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7D47AB156A2244008F44A8 /* AudioToolbox.framework in Frameworks */,
+				DA16EE2C156276AC00995E00 /* iAd.framework in Frameworks */,
 				DA16EDE515626F1000995E00 /* UIKit.framework in Frameworks */,
 				DA16EDE715626F1000995E00 /* Foundation.framework in Frameworks */,
 				DA16EDE915626F1000995E00 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +83,8 @@
 		DA16EDD515626F1000995E00 = {
 			isa = PBXGroup;
 			children = (
+				DA16EE291562756D00995E00 /* Icon57x57.png */,
+				DA16EE251562755000995E00 /* Default.png */,
 				DA16EDEA15626F1000995E00 /* Magic Decision Cube */,
 				DA16EDE315626F1000995E00 /* Frameworks */,
 				DA16EDE115626F1000995E00 /* Products */,
@@ -67,6 +102,8 @@
 		DA16EDE315626F1000995E00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA7D47AA156A2244008F44A8 /* AudioToolbox.framework */,
+				DA16EE2B156276AC00995E00 /* iAd.framework */,
 				DA16EDE415626F1000995E00 /* UIKit.framework */,
 				DA16EDE615626F1000995E00 /* Foundation.framework */,
 				DA16EDE815626F1000995E00 /* CoreGraphics.framework */,
@@ -77,11 +114,16 @@
 		DA16EDEA15626F1000995E00 /* Magic Decision Cube */ = {
 			isa = PBXGroup;
 			children = (
+				DA7D47DC156A2638008F44A8 /* FlipsideViewController.h */,
+				DA7D47DD156A2638008F44A8 /* FlipsideViewController.m */,
 				DA16EDF315626F1000995E00 /* AppDelegate.h */,
 				DA16EDF415626F1000995E00 /* AppDelegate.m */,
 				DA16EDF615626F1000995E00 /* MainStoryboard.storyboard */,
 				DA16EDF915626F1000995E00 /* ViewController.h */,
 				DA16EDFA15626F1000995E00 /* ViewController.m */,
+				DA16EE01156273A200995E00 /* Magic Decision Cube Images */,
+				DAB4B1C815714AC2008DCCD4 /* Magic Cube Sound Files */,
+				DAB4B1D415714FCB008DCCD4 /* Object Models */,
 				DA16EDEB15626F1000995E00 /* Supporting Files */,
 			);
 			path = "Magic Decision Cube";
@@ -90,12 +132,44 @@
 		DA16EDEB15626F1000995E00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAB4B1C6157143C3008DCCD4 /* MDCConfig.h */,
 				DA16EDEC15626F1000995E00 /* Magic Decision Cube-Info.plist */,
 				DA16EDED15626F1000995E00 /* InfoPlist.strings */,
 				DA16EDF015626F1000995E00 /* main.m */,
 				DA16EDF215626F1000995E00 /* Magic Decision Cube-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA16EE01156273A200995E00 /* Magic Decision Cube Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA16EE231562754600995E00 /* LaunchImage.png */,
+				DA16EE02156273A200995E00 /* Background.png */,
+				DA16EE04156273A200995E00 /* CompleteBackground.png */,
+				DA16EE06156273A200995E00 /* DecisionCube.png */,
+				DA16EE0B156273A200995E00 /* MagicDecisionCubeChrome.png */,
+				DA16EE0D156273A200995E00 /* SpeechBubble.png */,
+			);
+			path = "Magic Decision Cube Images";
+			sourceTree = "<group>";
+		};
+		DAB4B1C815714AC2008DCCD4 /* Magic Cube Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB4B1CB15714AFF008DCCD4 /* UhOh.m4a */,
+				DAB4B1C915714AF7008DCCD4 /* Cheer.m4a */,
+			);
+			name = "Magic Cube Sound Files";
+			sourceTree = "<group>";
+		};
+		DAB4B1D415714FCB008DCCD4 /* Object Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAB4B1D115714E31008DCCD4 /* DecisionOM.h */,
+				DAB4B1D215714E31008DCCD4 /* DecisionOM.m */,
+			);
+			name = "Object Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +199,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Nutty Cake Games";
 			};
 			buildConfigurationList = DA16EDDA15626F1000995E00 /* Build configuration list for PBXProject "Magic Decision Cube" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,6 +225,16 @@
 			files = (
 				DA16EDEF15626F1000995E00 /* InfoPlist.strings in Resources */,
 				DA16EDF815626F1000995E00 /* MainStoryboard.storyboard in Resources */,
+				DA16EE10156273A200995E00 /* Background.png in Resources */,
+				DA16EE12156273A200995E00 /* CompleteBackground.png in Resources */,
+				DA16EE14156273A200995E00 /* DecisionCube.png in Resources */,
+				DA16EE19156273A200995E00 /* MagicDecisionCubeChrome.png in Resources */,
+				DA16EE1B156273A200995E00 /* SpeechBubble.png in Resources */,
+				DA16EE241562754600995E00 /* LaunchImage.png in Resources */,
+				DA16EE261562755000995E00 /* Default.png in Resources */,
+				DA16EE2A1562756D00995E00 /* Icon57x57.png in Resources */,
+				DAB4B1CA15714AF7008DCCD4 /* Cheer.m4a in Resources */,
+				DAB4B1CC15714AFF008DCCD4 /* UhOh.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +248,8 @@
 				DA16EDF115626F1000995E00 /* main.m in Sources */,
 				DA16EDF515626F1000995E00 /* AppDelegate.m in Sources */,
 				DA16EDFB15626F1000995E00 /* ViewController.m in Sources */,
+				DA7D47DE156A2638008F44A8 /* FlipsideViewController.m in Sources */,
+				DAB4B1D315714E31008DCCD4 /* DecisionOM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +323,15 @@
 		DA16EDFF15626F1000995E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Magic Decision Cube/Magic Decision Cube-Prefix.pch";
 				INFOPLIST_FILE = "Magic Decision Cube/Magic Decision Cube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F929BC3F-F685-4B73-AE5E-941685953605";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -247,10 +339,15 @@
 		DA16EE0015626F1000995E00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Magic Decision Cube/Magic Decision Cube-Prefix.pch";
 				INFOPLIST_FILE = "Magic Decision Cube/Magic Decision Cube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F929BC3F-F685-4B73-AE5E-941685953605";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +371,7 @@
 				DA16EE0015626F1000995E00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
